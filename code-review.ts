@@ -42,43 +42,47 @@ export class UserPanelComponent {
 
 /**
  *  2) How can we solve them?
- *
  * */
 
 /**
- *   Create a method for subscribing to authService user observable that will be called on ngOnInit life cycle hook
+ *   Create a method for subscribing to authService user observable that will be called in ngOnInit life cycle hook
+ *
  *   Benefits would be:
- *   - Easier to test and debug the component
+ *   Easier to test and debug the component
  * */
 
 /**
  *   Use async pipe to subscribe to the authService user observable in the template
- *   Benefits would be:
- *   - Less boilerplate code
- *   - The async pipe would automatically unsubscribe from the observable on component destroy
  *
+ *   Benefits would be:
+ *   Less boilerplate code
+ *   The async pipe would automatically unsubscribe from the observable on component destroy
  * */
 
 /**
  *   Unsubscribe to the authService user observable on component destroy using ngOnDestroy lifecycle hook
+ *
  *   Benefits would be:
- *   - Prevention of memory leak
+ *   Prevention of memory leak
  * */
 
 /**
  *   Create an interface for the private user property
+ *
  *   Benefits would be:
- *   - Typescript type checking and suggestions
+ *   Typescript type checking and suggestions
  * */
 
 /**
  *   Add a return type for getUserName method
+ *
  *   Benefits would be:
- *   - Typescript type checking and suggestions
+ *   Typescript type checking and suggestions
  * */
 
 /**
- *   getUserName method would be executed on every change detection cycle thus can be replaced by a property or async pipe
+ *   getUserName method called in the template would be executed on every change detection cycle thus can be replaced by a property or async pipe
+ *
  *   Benefits would be:
- *   - Better performance
+ *   Better performance
  * */
