@@ -18,7 +18,7 @@
 
 /**
  *  Dependency injection
- *  You can create a singleton service provided as a dependency for Component A and Component B
+ *  You can create a singleton service provided as a dependency to Component A and Component B
  *  The singleton service can then be used to share data and methods between the two components
  *
  *  Benefits:
