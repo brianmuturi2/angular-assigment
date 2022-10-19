@@ -28,5 +28,3 @@ See the src/component-interaction.ts comments for component interaction answers.
 
 See the src/code-review.ts comments for code review answers
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
