@@ -1,3 +1,5 @@
+import {counter} from './counter-function';
+
 describe("counter function", function() {
     const [getA, nextA] = counter()
     it("has initial value of zero", function() {
