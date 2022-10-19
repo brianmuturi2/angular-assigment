@@ -26,19 +26,27 @@
  *
  *  Drawbacks:
  *  One would need rxjs library if data is to be shared between the two components on events basis by implementing an event bus using subjects, behavior subjects or replay subject
+ *
+ *  Best cases:
+ *  Share methods
+ *  Share data that is not often changed or mutated
  * */
 
 /**
- *  State management library e.g NgRx
+ *  State management library e.g NgRx or Redux
  *  One can use a state management library to share data between component A and Component B
  *
  *  Benefits:
- *  Only share data
- *  Immutability
+ *  Reducers for changing data in an immutable way
+ *  Selectors for getting data in a memoized way
  *
- *  Drawbacks
+ *  Drawbacks:
  *  Increased bundle size of application
- *  Increased application complexity if the use case is small e.g only sharing a simple data structure
+ *  Increased application complexity if the use case is small e.g only sharing a simple data structure between components
+ *
+ *  Best cases:
+ *  Share large or complex data is shared between components, taking advantage of entities or slices of store
+ *  Share data that is often changed, taking advantage of reducers and actions
  * */
 
 /**
@@ -47,4 +55,7 @@
  *
  *  Benefits:
  *  Easy to implement
+ *
+ *  Best cases:
+ *  When there is a parent child relation between components
  * */

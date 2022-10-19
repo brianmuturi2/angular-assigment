@@ -37,7 +37,7 @@ export class UserPanelComponent {
  *     The component does not unsubscribe from authService user observable
  *     The user property does not have a type
  *     No return type for getUserName method
- *     Calling getUserName method in the template
+ *     getUserName method call in the template would be executed in every change detection cycle
  * */
 
 /**
@@ -77,11 +77,11 @@ export class UserPanelComponent {
  *   Add a return type for getUserName method
  *
  *   Benefits would be:
- *   Typescript type checking and suggestions
+ *   Typescript type checking
  * */
 
 /**
- *   getUserName method called in the template would be executed on every change detection cycle thus can be replaced by a property or async pipe
+ *   Replace getUserName method call in the template with a property
  *
  *   Benefits would be:
  *   Better performance
