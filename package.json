@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack --config=webpack.config.js",
+    "get-episodes": "ts-node src/http-request-handling.ts",
     "test": "jasmine-ts --config=jasmine.json"
   },
   "repository": {
@@ -28,5 +28,8 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.1.5"
   }
 }
